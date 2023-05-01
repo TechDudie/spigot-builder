@@ -19,3 +19,8 @@ jobs:
 
       - name: Build Spigot
         run: java -jar BuildTools.jar --rev 1.19.4
+      
+      - uses: actions/upload-artifact@v3
+        with:
+          name: SpigotBuild
+          path: .
