@@ -23,4 +23,4 @@ jobs:
       - uses: actions/upload-artifact@v3
         with:
           name: SpigotBuild
-          path: spigot-1.20.jar
+          path: ./*
