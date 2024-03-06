@@ -11,14 +11,14 @@ jobs:
     steps:
       - uses: actions/checkout@v3
       
-      - name: Set up JDK 17
+      - name: Set up JDK 21
         uses: actions/setup-java@v3
         with:
-          java-version: '17'
-          distribution: 'temurin'
+          java-version: '21'
+          distribution: 'azul'
 
       - name: Build Spigot
-        run: java -jar BuildTools.jar --rev 1.20
+        run: java -jar BuildTools.jar --rev 1.20.4
       
       - uses: actions/upload-artifact@v3
         with:
